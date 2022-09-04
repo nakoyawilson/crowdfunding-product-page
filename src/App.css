@@ -1,0 +1,29 @@
+/* General Styles */
+
+body {
+  background-color: var(--light-gray);
+  background-image: url(../src/images/image-hero-mobile.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 300px;
+  font-family: var(--font);
+  font-weight: 400;
+  font-size: calc(16rem / 16);
+  line-height: calc(24rem / 16);
+}
+
+button {
+  background: none;
+  border: none;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+}

@@ -5,12 +5,19 @@ import "./Header.css";
 
 const Header = ({ navIsOpen, toggleNav, closeNav }) => {
   return (
-    <header>
-      <img src={logo} alt="" />
-      <button onClick={toggleNav}>
-        <img src={navIsOpen ? closeMenu : hamburger} alt="" />
+    <header className="header">
+      <img src={logo} alt="" className="logo" />
+      <button
+        onClick={toggleNav}
+        aria-label={navIsOpen ? "Close Menu" : "Open Menu"}
+      >
+        <img
+          src={navIsOpen ? closeMenu : hamburger}
+          alt=""
+          className="menu-btn-icon"
+        />
       </button>
-      <nav className="nav">
+      <nav className={`nav${navIsOpen ? " open" : ""}`}>
         <ul>
           <li>
             <a href="/" onClick={closeNav}>

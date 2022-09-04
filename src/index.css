@@ -6,38 +6,18 @@
   --dark-cyan: hsl(176, 72%, 28%);
   --black: hsl(0, 0%, 0%);
   --dark-gray: hsl(0, 0%, 48%);
+  --white: hsl(0, 0%, 100%);
+  --light-gray: hsl(0, 0%, 98%);
+  --transparent-black1: hsla(0, 0%, 0%, 0.0497193);
+  --transparent-black2: hsla(0, 0%, 0%, 0.15);
+  --very-dark-gray: hsl(0, 0%, 18%);
+  --transparent-gray: hsla(0, 0%, 18%, 0.05);
 }
 
 /* CSS Reset */
 
-*,
-*::after,
-*::before {
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
-/* General Styles */
-
-html {
-  font-size: 62.5%;
-}
-
-body {
-  background-image: url(../src/images/image-hero-mobile.jpg);
-  background-repeat: no-repeat;
-  font-family: var(--font);
-  font-weight: 400;
-  font-size: 1.6rem;
-}
-
-button {
-  background: none;
-  border: none;
-  font: inherit;
-}
-
-ul {
-  list-style: none;
 }

@@ -1,6 +1,30 @@
+.header {
+  width: min(87.2%, 327px);
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  padding: 32px 0;
+}
+
+.logo {
+  height: 20px;
+}
+
+.menu-btn-icon {
+  height: 15px;
+}
+
 .nav {
   position: fixed;
   top: 0;
   right: 0;
   transform: translateX(100%);
+  transition: all 0.5s ease-in-out;
+}
+
+.nav.open {
+  transform: translateX(0);
 }
