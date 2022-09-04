@@ -27,3 +27,11 @@ a {
 img {
   display: block;
 }
+
+/* Media Queries */
+@media screen and (min-width: 795px) {
+  body {
+    background-image: url(../src/images/image-hero-desktop.jpg);
+    background-size: 100% 400px;
+  }
+}

@@ -78,11 +78,11 @@
 }
 
 .main {
-  padding: 160px 0 76px;
+  padding: 116px 0 76px;
 }
 
 .container {
-  width: min(87.2%, 327px);
+  width: 87.2%;
   margin: 0 auto;
   background: var(--white);
   border-radius: 8px;
@@ -114,6 +114,7 @@
 
 .btn-wrapper {
   display: flex;
+  justify-content: space-between;
   gap: 9px;
 }
 
@@ -151,13 +152,6 @@
   left: 0;
   right: 0;
   margin: 0 auto;
-}
-
-.project-progress {
-  display: block;
-  width: 100%;
-  margin-top: 32px;
-  height: 12px;
 }
 
 .progress-bar-container {
@@ -228,14 +222,63 @@
 }
 
 /* Media Queries */
-@media screen and (min-width: 376px) {
+@media screen and (min-width: 795px) {
   /* Typography */
+
+  .main-heading {
+    font-size: calc(28rem / 16);
+    line-height: calc(34rem / 16);
+    padding: 0;
+  }
+
+  .section-heading {
+    font-size: calc(20rem / 16);
+    line-height: calc(24rem / 16);
+  }
+
+  .reward-heading {
+    font-size: calc(18rem / 16);
+    line-height: calc(22rem / 16);
+  }
+
+  .reward-subheading {
+    font-size: calc(15rem / 16);
+    line-height: calc(18rem / 16);
+    margin-top: 0;
+    text-align: right;
+  }
+
+  .paragraph {
+    font-size: calc(16rem / 16);
+    line-height: calc(20rem / 16);
+  }
+
+  .stat {
+    font-size: calc(15rem / 16);
+    line-height: calc(18rem / 16);
+  }
 
   .bookmark-text {
     display: block;
   }
 
   /* Layout */
+  .main {
+    padding: 180px 0 124px;
+  }
+
+  .container {
+    width: min(87.2%, 730px);
+  }
+
+  .overview {
+    padding: 56px 48px 48px;
+  }
+
+  .overview .paragraph {
+    margin: 15px 0 40px;
+  }
+
   .bookmark-btn {
     background: var(--transparent-gray);
     border-radius: 33.5px;
@@ -243,5 +286,66 @@
     gap: 16px;
     align-items: center;
     width: min(100%, 174px);
+  }
+
+  .stats {
+    padding: 48px 48px 49px;
+    text-align: left;
+  }
+
+  .stats-wrapper {
+    flex-direction: row;
+    gap: 90px;
+  }
+
+  .stats .quantity {
+    margin-bottom: 8px;
+  }
+
+  .stat {
+    width: min(100%, 137px);
+  }
+
+  .stat + .stat::before {
+    width: 1px;
+    height: 63px;
+    top: 0;
+    left: -47px;
+    right: auto;
+    margin: 0;
+  }
+
+  .progress-bar-container {
+    margin-top: 37px;
+  }
+
+  .about {
+    padding: 48px;
+  }
+
+  .about .paragraph {
+    margin-top: 35px;
+  }
+
+  .reward {
+    padding: 38px 32px 32px;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+  }
+
+  .reward:first-of-type {
+    margin-top: 40px;
+  }
+
+  .reward .paragraph {
+    grid-column: span 2;
+  }
+
+  .project-btn {
+    width: min(100%, 204px);
+  }
+
+  .select-btn {
+    justify-self: end;
   }
 }

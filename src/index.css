@@ -12,6 +12,11 @@
   --transparent-black2: hsla(0, 0%, 0%, 0.15);
   --very-dark-gray: hsl(0, 0%, 18%);
   --transparent-gray: hsla(0, 0%, 18%, 0.05);
+  --linear-gradient: linear-gradient(
+    180deg,
+    #000000 0%,
+    rgba(0, 0, 0, 0.0001) 100%
+  );
 }
 
 /* CSS Reset */

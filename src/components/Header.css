@@ -1,12 +1,18 @@
 .header {
-  width: min(87.2%, 327px);
+  background-image: var(--linear-gradient);
+  /* opacity: 0.6; */
+}
+
+.header-container {
+  width: 87.2%;
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   gap: 16px;
-  padding: 32px 0;
+  padding: 32px 0 76px;
+  opacity: 1;
 }
 
 .logo {
@@ -27,4 +33,33 @@
 
 .nav.open {
   transform: translateX(0);
+}
+
+/* Media Queries */
+@media screen and (min-width: 795px) {
+  .header-container {
+    width: min(77.01389%, 1109px);
+    padding: 48px 0 60px;
+  }
+
+  .menu-btn {
+    display: none;
+  }
+
+  .nav {
+    position: static;
+    transform: translateX(0);
+  }
+
+  .nav-links {
+    display: flex;
+    gap: 32px;
+  }
+
+  .nav-link {
+    font-weight: 500;
+    font-size: calc(13rem / 16);
+    line-height: calc(16rem / 16);
+    color: var(--white);
+  }
 }
